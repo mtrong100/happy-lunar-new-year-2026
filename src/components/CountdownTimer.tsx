@@ -51,7 +51,7 @@ export const CountdownTimer = () => {
       {timeUnits.map((unit, index) => (
         <div
           key={unit.label}
-          className="countdown-card flex flex-col items-center w-[230px] h-[230px] animate-float"
+          className="countdown-card flex flex-col items-center w-[150px] h-[150px] md:w-[230px] md:h-[230px] animate-float justify-center"
           style={{ animationDelay: `${index * 0.2}s` }}
         >
           <span className="countdown-number text-4xl md:text-6xl lg:text-7xl font-display font-bold gold-text lg:leading-relaxed">
