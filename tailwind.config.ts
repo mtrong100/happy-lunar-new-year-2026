@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Cinzel', 'serif'],
-        body: ['Noto Sans SC', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+        body: ['Be Vietnam Pro', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
