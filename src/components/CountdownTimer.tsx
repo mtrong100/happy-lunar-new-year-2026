@@ -35,10 +35,10 @@ export const CountdownTimer = () => {
   }, []);
 
   const timeUnits = [
-    { value: timeLeft.days, label: 'Days', labelCN: '天' },
-    { value: timeLeft.hours, label: 'Hours', labelCN: '时' },
-    { value: timeLeft.minutes, label: 'Minutes', labelCN: '分' },
-    { value: timeLeft.seconds, label: 'Seconds', labelCN: '秒' },
+    { value: timeLeft.days, label: 'Ngày', labelVI: 'Days' },
+    { value: timeLeft.hours, label: 'Giờ', labelVI: 'Hours' },
+    { value: timeLeft.minutes, label: 'Phút', labelVI: 'Minutes' },
+    { value: timeLeft.seconds, label: 'Giây', labelVI: 'Seconds' },
   ];
 
   return (
@@ -55,8 +55,8 @@ export const CountdownTimer = () => {
           <span className="text-foreground/80 text-sm md:text-base font-medium mt-2 tracking-wider uppercase">
             {unit.label}
           </span>
-          <span className="text-accent/60 text-lg md:text-xl font-body">
-            {unit.labelCN}
+          <span className="text-accent/60 text-sm md:text-base font-body">
+            {unit.labelVI}
           </span>
         </div>
       ))}
